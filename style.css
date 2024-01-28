@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -25,35 +29,17 @@ header {
   padding: 10px 5%;
 }
 
-nav ul {
-  list-style: none;
-  display: flex;
-  padding: 0;
-  margin: 0;
-}
-
-nav ul li {
-  margin-left: 20px;
-}
-
-nav ul li a {
-  text-decoration: none;
-  color: #333;
-  font-weight: bold;
-}
-
 main {
-  width: 80%;
-  margin: 20px auto;
+  margin: 20px 50px;
   margin-top: 100px;
 }
 
 section {
   background-color: #fff;
   padding: 20px;
-  margin-bottom: 20px;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 100%;
 }
 
 footer {
@@ -64,12 +50,57 @@ footer {
 }
 
 .grid {
+  width: 100%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 20px;
+  grid-gap: 30px;
 }
 
-@media (max-width: 1068px) {
+a {
+  color: #50c878;
+}
+
+p {
+  color: #222222;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+.hero {
+  /* The hero section will take at least 100% of the viewport height */
+  min-height: 100vh;
+
+  /* Center content */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* Background image */
+  background: url("hero.png") no-repeat center center fixed;
+
+  /* Cover will make sure the image covers the whole area */
+  background-size: cover;
+
+  /* Ensures the background image is fixed in the viewport */
+  background-attachment: fixed;
+
+  /* Add some padding */
+  padding: 20px;
+
+  /* Optional: Adds text color, change as needed */
+  color: white;
+
+  /* Optional: Text alignment */
+  text-align: center;
+
+  /* Optional: Overlay to ensure text is readable on any background */
+  position: relative;
+  z-index: 1;
+}
+
+@media (max-width: 1168px) {
   .grid {
     grid-template-columns: repeat(2, 1fr); /* Collapse to 2 columns */
   }
@@ -78,5 +109,9 @@ footer {
 @media (max-width: 780px) {
   .grid {
     grid-template-columns: 1fr; /* Collapse to 1 column */
+  }
+
+  main {
+    margin: 20px 20px;
   }
 }

@@ -65,10 +65,24 @@ p {
   color: #222222;
 }
 
+p {
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
 h2 {
   margin-top: 0;
   font-family: "Pinyon Script", cursive;
   font-size: 30px;
+}
+
+h4 {
+  margin-bottom: 5px;
+  color: #637d96;
+}
+
+hr {
+  margin: 30px 0;
 }
 
 .hero {

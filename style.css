@@ -75,7 +75,6 @@ footer {
   }
 }
 
-/* For phones (or any screen size with a max-width of 480px) */
 @media (max-width: 780px) {
   .grid {
     grid-template-columns: 1fr; /* Collapse to 1 column */

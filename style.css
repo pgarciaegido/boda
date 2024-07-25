@@ -11,7 +11,7 @@ body {
   background-image: url("./pattern.png");
   background-repeat: repeat;
   background-size: 10%;
-  font-family: "Lato", sans-serif;
+  font-family: "Merriweather", serif;
 }
 
 header {
@@ -58,7 +58,7 @@ footer {
 }
 
 a {
-  color: #a9ba9d;
+  color: #8ecae6;
 }
 
 p {
@@ -72,13 +72,13 @@ p {
 
 h2 {
   margin-top: 0;
-  font-family: "Pinyon Script", cursive;
+  font-family: "Great Vibes", cursive;
   font-size: 30px;
 }
 
 h4 {
   margin-bottom: 5px;
-  color: #637d96;
+  color: #219ebc;
 }
 
 hr {
